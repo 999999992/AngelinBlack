@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel in Black</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logito.jpeg">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="angelinblack_20240818-144202_logo.jpg" class="logo">
+            <ul>
+                <li><a href= "#history">Historia</a></li>
+                <li><a href="#integrantes-slider">Integrantes</a></li>
+                <li><a href="#concerts">Presentaciones</a></li>
+                <li><a href="./Galeria/soyunagaleria.html">Galería</a></li>
+            </ul>
+        </nav>
+        <div class="detel">
+            <h1>SOMOS <span> Angel In Black</span></h1>
+            <p>Somos una banda integrada por jóvenes que buscan presentar e intercambiar sus creaciones artísticas, las cuales derivan de los conocimientos y experiencias musicales previas de cada integrante. En particular, las canciones escritas hasta el momento tienen como base no solo experiencias de vida individuales, sino también una visión crítica y reflexiva de esta sociedad, que identifica motivaciones y ambiciones comunes que forman parte de los imaginarios sociales actuales.</p>
+        </div>
+        <div class="slider-box">
+          <ul class="slides">
+              <li><img src="foto1.jpg" alt="tocando"></li>
+              <li><img src="foto2.jpg" alt="tocando"></li>
+              <li><img src="foto3.jpg" alt="tocando"></li>
+              <li><img src="foto4.jpg" alt="tocando"></li>
+              <li><img src="foto5.jpg" alt="tocando"></li>
+              <li><a href="https://www.instagram.com/resiliencia_nu/?igsh=a3JnbTFsY3p5Zmx3#" target="_blank">
+                <img src="foto6.jpeg" alt="Publicidad de Resiliencia"></a>
+            </li>
+          </ul>
+          <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+          <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>      
+    </div>
+  <div class="history" id="history">
+    <h2>La Historia de Angel in Black</h2>
+    <p>Angel In Black es una banda que se formó a fines del año 2020, en medio de la pandemia del COVID-19, en la ciudad de Cipolletti, ubicada en la Norpatagonia Argentina. La banda fue iniciada por Lucas Durán y Genaro Bilbao, quienes, junto a Ezequiel Marredo, decidieron innovar en el género metal en la región del Alto Valle Rionegrino.
+      En 2021, la banda comenzó la preproducción de su primer disco de estudio, lo que llevó a la incorporación de dos nuevos miembros: Luciano Pistagnesi y María Eugenia Manca. Con esta nueva formación, se iniciaron oficialmente las grabaciones en estudio de las composiciones trabajadas. 
+      Este proceso se extendió hasta enero de 2022, debido a la necesidad de regrabar las canciones varias veces para lograr la mejor calidad de sonido posible.
+      Durante enero de 2022, uno de los integrantes decidió dejar la banda, lo que llevó a la incorporación de Matías Pucheta como guitarrista lead. Así, se consolidó la formación actual de Angel In Black.</p>
+</div>
+<div class="discografia">
+    <h2>Discografía</h2>
+    <div class="album">
+        <h3>Reborn in Chaos (2022) <span class="toggle" onclick="toggleDetails()">▶</span></h3>
+        <div class="details" id="details">
+            <h5>
+                Este título surge de las distintas vivencias que experimentaron algunos
+                integrantes en distintos momentos de su vida, tanto a nivel personal y
+                social como musical. Dichas experiencias fueron recuperadas como
+                motivos temáticos dentro de las letras de las canciones, que se
+                vinculan entre sí bajo una concepción cíclica de la vida, la muerte y el
+                renacimiento en el contexto de una sociedad individualista y alienante.
+            </h5>
+            <p><strong>Canciones:</strong></p>
+            <p>1. Inmortal Fire</p>
+            <p>2. Reborn In Chaos</p>
+            <p>3. The Last Stand</p>
+            <p>4. Desperation</p>
+            <p>5. Judgement Day</p>
+            <p>6. A New World</p>
+            <p>7. Acid Trip</p>
+            <p>8. Red Redemption</p>
+            <p><strong>Plataformas:</strong></p>
+            <div class="platforms">
+                <a href="https://www.spotify.com" target="_blank">
+                    <img src="./Ver Reborn in Chaos/spotify-logo.png" alt="Spotify" class="platform-logo">
+                </a>
+                <a href="https://music.apple.com/ar/album/reborn-in-chaos/1652778519" target="_blank">
+                    <img src="./Ver Reborn in Chaos/apple-music-logo.png" alt="Apple Music" class="platform-logo">
+                </a>
+                <a href="https://www.youtube.com/watch?v=4sz8JZbxtUA&list=PL683xsvVoTQxeq9UffsJrLIfVDIwCtY3X" target="_blank">
+                    <img src="./Ver Reborn in Chaos/youtube-logo.png" alt="YouTube" class="platform-logo">
+                </a>
+                <a href="https://music.youtube.com/watch?v=4sz8JZbxtUA&list=PL683xsvVoTQxeq9UffsJrLIfVDIwCtY3X" target="_blank">
+                    <img src="./Ver Reborn in Chaos/youtubemusic-logo.png" alt="YouTube Music" class="platform-logo">
+                </a>
+                <a href="https://listen.tidal.com/album/258137410" target="_blank">
+                    <img src="./Ver Reborn in Chaos/tidal-logo.png" alt="TIDAL" class="platform-logo">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .details {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+    .details.show {
+        display: block;
+        opacity: 1;
+    }
+</style>
+
+<script>
+    function toggleDetails() {
+        const details = document.getElementById('details');
+        details.classList.toggle('show');
+    }
+</script>
+
+  <section class="concerts" id="concerts">
+      <h2>Presentaciones</h2>
+      <ul>
+        <li>
+          <h3>NOCHE DE METAL</h3>
+          <p><strong>Fecha:</strong> Viernes 10 de marzo del 2023</p>
+          <p><strong>Ubicación:</strong> Mariano Moreno 675 (Orlando Patio Cervecero - Cipolletti)</p>
+      </li>
+          <li>
+              <h3>CIPOMETALFEST VOL I</h3>
+              <p><strong>Fecha:</strong> Viernes 22 de octubre del 2023</p>
+              <p><strong>Ubicación:</strong> Teatro de Cipolletti</p>
+          </li>
+          <li>
+              <h3>CIPOMETALFEST VOL II</h3>
+              <p><strong>Fecha:</strong> Sabado 9 de marzo del 2024</p>
+              <p><strong>Ubicación:</strong> Estadio Ruca Che</p>
+          </li>
+          <li>
+              <h3>10 ALMAS - Espacio Cultural</h3>
+              <p><strong>Fecha:</strong> Viernes 26 de abril del 2024</p>
+              <p><strong>Ubicación:</strong> Intendente Carro y Pampa (Neuquén Capital)</p>
+          </li>
+          <li>
+              <h3>HEAVY NIGHT</h3>
+              <p><strong>Fecha:</strong> 18 de mayo del 2024</p>
+              <p><strong>Ubicación:</strong> La Casa de la Bodega (Tres Arroyos 375 - Cipolletti)</p>
+          </li>
+          <li>
+              <h3>PATAGONIA WARRIOR VOL III</h3>
+              <p><strong>Fecha:</strong> Sabado 27 de julio del 2024</p>
+              <p><strong>Ubicación:</strong> Arrimadero Teatro (Misiones 234 - Neuquén)</p>
+          </li>
+      </ul>
+  </section>
+</div>
+<div class="integrantes-slider" id="integrantes-slider">
+    <h2>Integrantes de la Banda</h2>
+    <div class="slider">
+        <div class="card" onclick="showBio('bio-lucas')">
+            <img src="./integrantes/lucasduran.jpeg" alt="Lucas Duran">
+            <h3>Lucas Duran</h3>
+            <p>Baterista</p>
+        </div>
+        <div class="card" onclick="showBio('bio-genaro')">
+            <img src="./integrantes/genaro.jpeg" alt="Genaro Bilbao">
+            <h3>Genaro Bilbao</h3>
+            <p>Guitarra Rítmica y voz</p>
+        </div>
+        <div class="card" onclick="showBio('bio-eugenia')">
+            <img src="./integrantes/Eugenia Manca.jpeg" alt="Maria Eugenia Manca">
+            <h3>Maria Eugenia</h3>
+            <p>Voz</p>
+        </div>
+        <div class="card" onclick="showBio('bio-matias')">
+            <img src="./integrantes/matias pucheta.jpeg" alt="Matias Pucheta">
+            <h3>Matias Pucheta</h3>
+            <p>Guitarra Lead</p>
+        </div>
+        <div class="card" onclick="showBio('bio-juan')">
+            <img src="./integrantes/juancito.jpg" alt="Juan Uircaleo">
+            <h3>Juan Uircaleo</h3>
+            <p>Bajista</p>
+        </div>
+        <div class="card" onclick="showBio('bio-luciano')">
+            <img src="./integrantes/abandonado por dios.jpeg" alt="Luciano Pistagnesi">
+            <h3>Luciano Pistagnesi</h3>
+            <p>Ex-baterista</p>
+        </div>
+    </div>
+    
+    <div id="bio-popup" class="bio-popup" onclick="hideBio()">
+        <div class="bio-content">
+            <span class="close" onclick="hideBio()">&times;</span>
+            <h3 id="bio-title"></h3>
+            <p id="bio-text"></p>
+            <div id="bio-details"></div>
+            <div id="bio-socials"></div>
+        </div>
+    </div>
+  </div>  
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Angel In Black. Todos los derechos reservados.</p>
+            <p><strong>Síguenos en:</strong></p>
+            <a href="https://www.instagram.com/angelinblack_band/" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="social-icon">
+          </a>
+          <a href="https://www.facebook.com/angelinblackband" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="social-icon">
+          </a>
+          <a href="https://www.tiktok.com/@angel.in.black.band" target="_blank">
+              <img src="https://seeklogo.com/images/T/tiktok-icon-logo-1CB398A1BD-seeklogo.com.png" alt="TikTok" class="social-icon">
+          </a>          
+            <p>Contacto: <p>angelinblackcontact@gmail.com</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

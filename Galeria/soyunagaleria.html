@@ -1,0 +1,71 @@
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel in Black - Galería</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="logo en negro.jpeg">
+</head>
+<body>
+    <header>
+        <img src="angelinblack_20240818-144202_logo.jpg" alt="Logo" class="logo">
+    </header>
+        <div class="gallery">
+            <section id="fotos">
+                <h2>Galería de Fotos</h2>
+                <ul class="gallery-list">
+                    <li class="gallery-item">
+                        <img src="galeria04.jpg" alt="Descripción de la foto 1" onclick="openModal(this.src, 'Detras de camaras')">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="galeria00.jpeg" alt="Descripción de la foto 2" onclick="openModal(this.src, 'Foto sacada del Patio Cervecero en Cipolletti')">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="galeria02.jpeg" alt="Descripción de la foto 3" onclick="openModal(this.src, 'Foto grupal #1')">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="galeria01.jpeg" alt="Descripción de la foto 4" onclick="openModal(this.src, 'Brillando en el escenario #1')">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="galeria03.jpg" alt="Descripción de la foto 5" onclick="openModal(this.src, 'Foto grupal #2')">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="galeria05.jpg" alt="Descripción de la foto 6" onclick="openModal(this.src, 'Brillando en el escenario #2')">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="concierto.jpg" alt="Descripción de la foto 7" onclick="openModal(this.src, 'Brillando en el escenario #3')">
+                    </li>
+                </ul>
+            </section>
+        
+            <section id="videos">
+                <h2>Galería de Videos</h2>
+                <ul class="gallery-list">
+                    <li class="gallery-item">
+                        <img src="thumbnail1.jpg" alt="Descripción del video 1" onclick="openVideoModal('BehindTheScenes00.mp4', 'Genaro Bilbao y sus precisas ritmicas')">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="thumbnail2.jpg" alt="Descripción del video 2" onclick="openVideoModal('BehindTheScenes01.mp4', 'Lucas Duran sacándole chispa al bajo para las nuevas canciones!')">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="Screenshot_20240925-203755_Instagram.jpg" alt="Descripción del video 3" onclick="openVideoModal('Red Redemption en vivo.mp4', 'Red Redemption (Grabado en vivo desde el CipoMetalFest)')">                    </li>
+                    </li>
+                    <li class="gallery-item">
+                        <img src="Screenshot_20240925-204735_Facebook.jpg" alt="" onclick="openVideoModal('Angel in Black - Deseperation Teaser.mp4', 'Desperation - Teaser Trailer 5/8/22')">
+                    <li class="gallery-item">
+                        <img src="thumbnail3.jpeg" alt="" onclick="openVideoModal('PatagoniaWarriorvide.mp4', 'Todo lo que ocurrio en Patagonia Warrior Vol III')">
+                    </li>
+                </ul>
+            </section>
+        </div>
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img" alt="">
+        <video class="modal-video" id="modal-video" controls></video>
+        <div id="modal-caption" class="modal-caption"></div>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+</html>
